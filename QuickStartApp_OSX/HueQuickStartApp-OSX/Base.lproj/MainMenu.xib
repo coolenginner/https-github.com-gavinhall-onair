@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="494" customClass="AppDelegate">
+            <connections>
+                <outlet property="HueM" destination="vrm-3o-bmZ" id="2QY-oA-4rb"/>
+                <outlet property="cameraS" destination="1kY-KA-aqT" id="qpY-Xs-1JY"/>
+                <outlet property="micS" destination="Abp-j0-nCq" id="z2s-a0-OFW"/>
+                <outlet property="theMenu" destination="nMh-pN-8Rj" id="Mxg-Kl-kE1"/>
+                <outlet property="window" destination="tfE-zA-lPc" id="Elt-vy-1gE"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+        <menu id="nMh-pN-8Rj">
+            <items>
+                <menuItem title="📷  Day:39%, Week:34%, Month: 45%" id="1kY-KA-aqT">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="OnEmpty:" target="494" id="dkS-GK-f2O"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="FfS-oh-g4H"/>
+                <menuItem title="🎤  Day:17%, Week:74%, Month: 29%" id="Abp-j0-nCq">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="OnEmpty:" target="494" id="u2j-kb-K76"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="RXV-HF-w2B"/>
+                <menuItem title="Philips Hue Preferences" id="vrm-3o-bmZ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="OnConnectionM:" target="494" id="db2-OI-0f5"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="5Ly-3H-WjH"/>
+                <menuItem title="Quit" id="uI5-bH-dmR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitMe:" target="494" id="WZT-Jk-OlY"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-74" y="483"/>
+        </menu>
+        <window title="Philips Hue Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="tfE-zA-lPc">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="420" height="360"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="Rj3-S5-RL5">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <point key="canvasLocation" x="-74" y="163"/>
+        </window>
+    </objects>
+</document>
